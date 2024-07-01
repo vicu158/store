@@ -117,10 +117,10 @@ LOGOUT_REDIRECT_URL = '/'
 # Отправка Emails
 EMAIL_HOST = 'smtp.yandex.com'
 EMAIL_PORT = 465
-EMAIL_HOST_USER = 'viktorevlashev@yandex.ru'
-EMAIL_HOST_PASSWORD = 'ipsyandex'
+EMAIL_HOST_USER = 'dj.s1te@yandex.ru'
+EMAIL_HOST_PASSWORD = 'xknvrqczilbuxxtx'
 EMAIL_USE_SSL = True
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 
-SITE_ID = 1
+# SITE_ID = 1
