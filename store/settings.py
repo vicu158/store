@@ -3,24 +3,24 @@ import environ
 from pathlib import Path
 
 env = environ.Env(
-    DEBUG=(bool),
-    SECRET_KEY=(str),
-    DOMAIN_NAME=(str),
+    DEBUG=bool,
+    SECRET_KEY=str,
+    DOMAIN_NAME=str,
 
-    REDIS_HOST=(str),
-    REDIS_PORT=(str),
+    REDIS_HOST=str,
+    REDIS_PORT=str,
 
-    DATABASE_NAME=(str),
-    DATABASE_USER=(str),
-    DATABASE_PASSWORD=(str),
-    DATABASE_HOST=(str),
-    DATABASE_PORT=(str),
+    DATABASE_NAME=str,
+    DATABASE_USER=str,
+    DATABASE_PASSWORD=str,
+    DATABASE_HOST=str,
+    DATABASE_PORT=str,
 
-    EMAIL_HOST=(str),
-    EMAIL_PORT=(int),
-    EMAIL_HOST_USER=(str),
-    EMAIL_HOST_PASSWORD=(str),
-    EMAIL_USE_SSL=(bool),
+    EMAIL_HOST=str,
+    EMAIL_PORT=int,
+    EMAIL_HOST_USER=str,
+    EMAIL_HOST_PASSWORD=str,
+    EMAIL_USE_SSL=bool,
 )
 
 # ссылка до site_dj
@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'allauth.socialaccount.providers.github',
     'debug_toolbar',
+    'django_extensions',
 
     'products',
     'orders',
